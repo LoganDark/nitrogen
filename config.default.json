@@ -1,7 +1,17 @@
-// You can modify this file, or preferably copy it to a `config.json`.
+// Copy this file to a `config.json` and edit that instead of touching this file
+// Remove all comments, including these ones (hexazine does not remove them)
 
 {
 	"port" : 0, // set to zero to use the defaults (80, and 443 for HTTPS)
 	"secret": "", // set to the same secret you set in the GitHub webhook, or leave empty for no auto-update
-	"branch": "master" // set this to the branch you want auto-update to watch
+	"branch": "master", // set this to the branch you want auto-update to watch,
+	"reverse_proxy": "", // use a reverse proxy to this host instead of the app directory. use http://
+	"api_base": "", // API base. For example, https://app.nitrogenedit.com/api/ (leading slash is required)
+	"host": "", // "Host" header in HTTP requests to respond with Nitrogen. Don't include the port.
+	"mailgun_private_key": "", // Mailgun private API key
+	"mailgun_public_key": "", // Mailgun public validation API key
+	"mailgun_domain": "", // Mailgun domain
+	"stripe_pk": "", // Stripe publishable key
+	"stripe_sk": "", // Stripe secret key
+	"stripe_custom_domain_plan": "" // Stripe Recurring Usage plan to use for custom domains
 }

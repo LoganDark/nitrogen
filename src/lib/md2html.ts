@@ -1,11 +1,9 @@
 import * as Prism                            from 'prismjs'
 import * as loadLanguages                    from 'prismjs/components/index'
 import {Converter}                           from 'showdown'
-import {Cheerio, CheerioAPI, CheerioElement} from './cheerio'
+import {Cheerio, CheerioAPI, CheerioElement} from '../../cheerio'
 
 loadLanguages()
-
-declare var require: any
 
 let cheerio: CheerioAPI
 
